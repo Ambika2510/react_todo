@@ -58,11 +58,18 @@ function TodoForm(props) {
         <h1>To Do List</h1>
  <input type="text" placeholder='Add a todo' value={input}  name='text' className='todo-input' onChange={handleChange}/>
   <button className='todo-button' onClick={listofitems}>+</button>
+<<<<<<< HEAD
     
     {items.map((e,i)=>{
       return <Todolist key={i} id={i} text={e} onselect={deleteitems}/>;
     })}
    
+=======
+
+    {items.map((e,i)=>{
+      return <Todolist key={i} id={i} text={e} onselect={deleteitems}/>;
+    })}
+>>>>>>> ab0ebf062063713fdb87de806e31c75c6cbf532e
      
   
     </ReactScrollToBottom>
