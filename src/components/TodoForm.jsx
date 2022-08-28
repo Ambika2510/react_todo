@@ -59,9 +59,6 @@ function TodoForm(props) {
  <input type="text" placeholder='Add a todo' value={input}  name='text' className='todo-input' onChange={handleChange}/>
   <button className='todo-button' onClick={listofitems}>+</button>
     
-    {items.map((e,i)=>{
-      return <Todolist key={i} id={i} text={e} onselect={deleteitems}/>;
-    })}
    
 
     {items.map((e,i)=>{
